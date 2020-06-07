@@ -6,7 +6,7 @@ body {
 .complete-page {
     display: grid;
     min-height: 100vh;
-    grid-template-rows: 1fr 1fr 5fr;
+    grid-template-rows: 1fr 0.5fr 5fr;
 }
 
 .game-title {
@@ -18,40 +18,38 @@ body {
 
 .player-selection {
     display: grid;
+    align-items: center;
+    justify-items: space-evenly;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .versus-human {
-    display: grid;
+    text-align: center;
     grid-column: 2/3;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
 }
 
 .versus-computer {
-    display: grid;
+    text-align: center;
     grid-column: 3/4;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
 }
 
 #play-vs-human, #play-vs-computer {
-    grid-column: 2/4;
-    grid-row: 2/4;
+    width: 8em;
+    height: 3em;
     cursor: pointer;
 }
 
 .game-grid-div {
     display: grid;
-    grid-template-columns: 3fr 2fr 3fr;
-    grid-template-rows: 1fr 5fr 1fr;
+    align-items: center;
+    justify-items: center;
 }
 
 .game-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column: 2/span 1;
-    grid-row: 2/span 1;
+    height: 50vh;
+    width: 50vh;
 }
 
 .game-grid-item {
@@ -60,6 +58,6 @@ body {
 
 .game-title, .complete-page, .versus-computer, .versus-human, .player-selection, .game-grid-div, .game-grid, .game-grid-item {
     border: 1px solid black;
-    margin: 1px;
-    padding: 1px;
+    margin: 2px;
+    padding: 2px;
 }
