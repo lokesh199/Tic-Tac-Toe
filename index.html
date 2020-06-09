@@ -15,10 +15,10 @@
         </div>
         <div class="player-selection">
             <div class="versus-human">
-                <button id="play-vs-human">VS Human</button>
+                <button class="mode-selector" id="play-vs-human">VS Human</button>
             </div>
             <div class="versus-computer">
-                <button id="play-vs-computer">VS Computer</button>
+                <button class="mode-selector" id="play-vs-computer">VS Computer</button>
             </div>
         </div>
         <div class="game-grid-div">
@@ -32,6 +32,39 @@
                 <div class="game-grid-item"></div>
                 <div class="game-grid-item"></div>
                 <div class="game-grid-item"></div>
+            </div>
+            <div>
+                <button id="new-game">New Game</button>
+            </div>
+        </div>
+        <div class="player-state">
+            <div class="player-1-state active-player">
+                player-1
+            </div>
+            <div class="player-2-state">
+                player-2
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-div">
+        <div class="player-registration-div">
+            <div class="player-1-details">
+                <span>Player 1 Name: <input id="player-1-name"></span>
+                <div class="marker-choice">
+                    <button class="registration-button" id='x-1'>X</button>
+                    <button class="registration-button" id='o-1'>O</button>
+                </div>
+            </div>
+            <div class="player-2-details">
+                <span>Player 2 Name: <input id="player-2-name"></span>
+                <div class="marker-choice">
+                    <button class="registration-button" id='x-2'>X</button>
+                    <button class="registration-button" id='o-2'>O</button>
+                </div>
+            </div>
+            <div class="submit-button-div">
+                <button class="registration-button" id="submit-button">Lets Play</button>
             </div>
         </div>
     </div>
